@@ -1,0 +1,19 @@
+[build-system]
+requires = ["uv_build >= 0.9.28"]
+build-backend = "uv_build"
+
+[project]
+name = "security-tools"
+description = "Security tools"
+authors = [{name = "mikle-green"}]
+readme = "README.md"
+license-files = ["LICENSE"]
+requires-python = ">=3.10.0"
+dependencies = []
+dynamic = ["version"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["ALL"]
