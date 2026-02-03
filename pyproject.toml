@@ -1,6 +1,6 @@
 [build-system]
-requires = ["uv_build >= 0.9.28"]
-build-backend = "uv_build"
+requires = ["hatchling", "versioningit"]
+build-backend = "hatchling.build"
 
 [project]
 name = "security-toolbox"
@@ -11,6 +11,9 @@ license-files = ["LICENSE"]
 requires-python = ">=3.10"
 dependencies = []
 dynamic = ["version"]
+
+[tool.hatch.version]
+source = "versioningit"
 
 [tool.ruff]
 line-length = 120
