@@ -15,6 +15,12 @@ dynamic = ["version"]
 [tool.hatch.version]
 source = "versioningit"
 
+[tool.hatch.build.targets.sdist]
+packages = ["security_tools"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["security_tools"]
+
 [tool.ruff]
 line-length = 120
 
