@@ -11,6 +11,10 @@ license-files = ["LICENSE"]
 requires-python = ">=3.10"
 dependencies = []
 dynamic = ["version"]
+keywords = ["security", "password"]
+
+[project.urls]
+repository = "https://github.com/mikle-green/security-tools"
 
 [tool.hatch.version]
 source = "versioningit"
